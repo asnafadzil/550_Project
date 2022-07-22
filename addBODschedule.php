@@ -5,21 +5,20 @@
 </head>
 <body background= "clinicview.jpg">
 <ul>
-<li class="dropdown"><font color="yellow" size="10">ADMIN MODE</font></li>
+<li class="dropdown"><font color="yellow" size="5">Entrepreneur Development Assistant Mode</font></li>
 <br>
 <h2>
   <li class="dropdown">   
-  <button type="button" onclick="window.location.href='changebookingstatus.php'" style="float:left;background-color:#2B4F76">Update Booking Status</button>
+  <button type="button" onclick="window.location.href='changebookingstatus.php'" style="float:left;background-color:red;">Update Booking Status</button>
   <a href="javascript:void(0)" class="dropbtn">Director</a>
     <div class="dropdown-content">
       <a href="addBOD.php">Add BOD</a>
       <a href="addBODschedule.php">Add BOD Schedule</a>
       <a href="showBOD.php">Show BOD</a>
-	  <a href="showBODschedule.php">Show BOD Schedule</a>
     </div>
   </li>
     <li>  
-	<form method="post" action="mainpage.php">	
+	<form method="post" action="alogin.php">	
 	<button type="submit" class="cancelbtn" name="logout" style="float:right;font-size:22px"><b>Log Out</b></button>
 	</form>
   </li>	

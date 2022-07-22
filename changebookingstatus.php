@@ -28,7 +28,7 @@ tr,td{
 <body style="background-image:url(mgrchange.jpg)">
 	<div class="header">
 		<ul>
-			<li style="float:left;border-right:none"><a href="ulogin.php" class="logo"><img src="../images/cal.png" width="30px" height="30px"><strong></strong>Appointment Booking System</a></li>
+			<li style="float:left;border-right:none"><a href="mainpage.php" class="logo"><img src="https://scontent.fkul13-1.fna.fbcdn.net/v/t1.6435-9/66425927_2334783386610512_3429672381042393088_n.png?_nc_cat=105&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=KEQ3LeOQploAX8Cn0jJ&_nc_ht=scontent.fkul13-1.fna&oh=00_AT9a3GboWxeiLojCF59YeMajnDa1rayfwHSSOK_ThJ8k8g&oe=62E0D5A1" width="30px" height="30px"><strong></strong>Appointment Booking System</a></li>
 			<li><a href="mainpage.php">Home</a></li>
 		</ul>
 	</div>
@@ -36,7 +36,7 @@ tr,td{
 	<div>
 		
 	
-		<label style="font-size:20px"><b>Doctor:</b></label><br>
+		<label style="font-size:20px"><b>Select Director:</b></label><br>
 		<select name="persontomeet" id="persontomeet-list" class="demoInputBox" style="width:100%;height:35px;border-radius:9px">
 		<option value="">Select Director</option>
 		<?php
@@ -68,7 +68,7 @@ if(isset($_POST['submit']))
 		 $results1=$conn->query($sql1); 
 			require_once("dbconfig.php");
 ?>			
-				<form action="changebookingstatus.php" method="post">; 
+				<form action="changebookingstatus.php" method="post"> 
 				<table>
 				<tr>
 				<th>UserName</th>

@@ -28,7 +28,7 @@ session_start();
 	{ 
 		$_SESSION['userName'] = 'admin'; 
 		echo "Logging you in..";
-		header( "Refresh:3; url=mainpage.php");
+		header( "Refresh:0.1; url=mainpage.php");
 	} 
 	else { 
 		echo "Wrong Credentials!"; 

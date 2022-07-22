@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="conatiner">
+    <div class="container">
       <header>
         <div class="label">
           <a href="#">Azzam Reezky Group</a>
