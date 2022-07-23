@@ -119,7 +119,7 @@ require_once("dbconfig.php");
 				}
 			}
 			echo "Redirecting.....";
-			header( "Refresh:0.1; url=mainpage.php");
+			header( "Refresh:1; url=mainpage.php");
 				
 		}
 ?>
