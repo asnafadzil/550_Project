@@ -5,7 +5,7 @@
 	<form action="alogin.php" method="post">
 	<div class="header">
 				<ul>
-					<li style="float:left;border-right:none"><strong> Admin Login</strong></li>
+					<li style="float:left;border-right:none"><strong> Entrepreneur Development Assistant Login</strong></li>
 					<li><a href="cover.php">Home</a></li>
 				</ul>
 	</div>
@@ -24,7 +24,7 @@ function SignIn()
 { 
 session_start();
  {  
-	if($_POST['uname']=='admin' && $_POST['pass']=='admin') 
+	if($_POST['uname']=='admin' && $_POST['pass']=='azzamreezky') 
 	{ 
 		$_SESSION['userName'] = 'admin'; 
 		echo "Logging you in..";
