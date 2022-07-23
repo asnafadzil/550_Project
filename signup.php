@@ -56,7 +56,7 @@ function newUser()
 	if (mysqli_query($conn, $sql)) 
 	{
 		echo "<h2>Record created successfully!! Redirecting to login page....</h2>";
-		header( "Refresh:1; url=cover.php");
+		header( "Refresh:0.1; url=cover.php");
 
 	} 
 	else
