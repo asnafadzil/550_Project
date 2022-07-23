@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Jul 12, 2022 at 06:12 AM
+-- Generation Time: Jul 23, 2022 at 04:58 AM
 -- Server version: 5.7.33
 -- PHP Version: 7.4.19
 
@@ -30,15 +30,15 @@ SET time_zone = "+00:00";
 CREATE TABLE `book` (
   `BookID` int(12) NOT NULL,
   `Username` varchar(30) NOT NULL,
-  `Fname` varchar(30) NOT NULL,
+  `Fname` varchar(3000) NOT NULL,
   `PhoneNum` varchar(15) NOT NULL,
-  `CompName` varchar(30) NOT NULL,
+  `CompName` varchar(3000) NOT NULL,
   `CompEmail` varchar(30) NOT NULL,
   `DOV` date NOT NULL,
-  `TimeVisit` varchar(10) NOT NULL,
+  `TimeVisit` varchar(1000) NOT NULL,
   `ptm_id` int(5) NOT NULL,
-  `Reason` varchar(30) NOT NULL,
-  `FileLink` varchar(1000) NOT NULL,
+  `Reason` varchar(30000) NOT NULL,
+  `FileLink` varchar(10000) NOT NULL,
   `Timestamp` datetime NOT NULL,
   `Status` varchar(100) NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
@@ -50,7 +50,8 @@ CREATE TABLE `book` (
 INSERT INTO `book` (`BookID`, `Username`, `Fname`, `PhoneNum`, `CompName`, `CompEmail`, `DOV`, `TimeVisit`, `ptm_id`, `Reason`, `FileLink`, `Timestamp`, `Status`) VALUES
 (12, 'Adnan Hussin', 'Asna', '01223456789', 'Ahmad Idsan Snd Bhd', 'afiq@gmail.com', '2022-07-09', '', 1, 'Kerepok Lekor Project', 'https://www.udemy.com', '2022-07-07 17:39:45', 'Rejected'),
 (13, 'Adnan Hussin', 'Asna', '0194478988', 'Ahmad Idsan Snd Bhd', 'asjdndnn@gmail.com', '2022-07-11', '', 1, 'Kerepok Lekor Project', 'https://www.udemy.com', '2022-07-07 18:00:54', 'Accepted'),
-(16, 'Adnan Hussin', 'Ahmad Tarmizi', '01223456789', 'Ahmad Maliki Company', 'ahmadmalkicomp@gmail.com', '2022-07-12', 'TimeVisit', 1, 'Kerepok Lekor Project', 'https://www.udemy.com', '2022-07-10 15:35:04', 'Booking Registered.Wait for the update');
+(16, 'Adnan Hussin', 'Hassan', '01223456789', 'Ahmad Maliki Company', 'ahmadmalkicomp@gmail.com', '2022-07-12', 'TimeVisit', 1, 'Kerepok Lekor Project', 'https://www.udemy.com', '2022-07-10 15:35:04', 'Booking Registered.Wait for the update'),
+(17, 'Adnan Hussin', 'Ahmad Tarmizi', '01223456789', 'Ahmad Maliki Company', 'ahmadmalkicomp@gmail.com', '2022-07-25', 'TimeVisit', 1, 'kmlm', 'https://www.udemy.com', '2022-07-22 00:50:08', 'Accepted');
 
 -- --------------------------------------------------------
 
@@ -152,7 +153,7 @@ ALTER TABLE `persontomeet_availability`
 -- AUTO_INCREMENT for table `book`
 --
 ALTER TABLE `book`
-  MODIFY `BookID` int(12) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
+  MODIFY `BookID` int(12) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
