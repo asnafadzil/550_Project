@@ -110,16 +110,17 @@ require_once("dbconfig.php");
 				$updatequery="update book set Status='$stts[$j]' where username='$usrnm[$j]' and timestamp='$tmstmp[$j]'";
 				if (mysqli_query($conn, $updatequery)) 
 				{
-							echo "$fnm[$j] :Status updated successfully..!!<br>";
-
+							
+							echo '<script>alert( "Status Updated Successfully")
+							</script>';
+							header( "Refresh: 0.2; url=mainpage.php");
 				} 
 				else
 				{
 					echo "Error: " . $sql . "<br>" . mysqli_error($conn);
 				}
 			}
-			echo "Redirecting.....";
-			header( "Refresh:1; url=mainpage.php");
+
 				
 		}
 ?>
