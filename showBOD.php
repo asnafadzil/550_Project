@@ -46,7 +46,7 @@ tr,td{
   </li>	
 </ul>
 </h2>
-<center><h1>SHOW DOCTOR</h1><hr>
+<center><h1>SHOW DIRECTOR</h1><hr>
 <?php
 include 'dbconfig.php';
 $sql="SELECT * FROM persontomeet order by ptm_id ASC";
